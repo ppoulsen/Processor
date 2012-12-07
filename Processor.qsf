@@ -45,3 +45,11 @@ set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VHDL_FILE Processor.vhd
+set_global_assignment -name FLEX10K_DEVICE_IO_STANDARD TTL
+set_location_assignment PIN_91 -to "on-board_oscillator"
+set_instance_assignment -name RESERVE_PIN "AS INPUT TRI-STATED" -to "on-board_oscillator"
+set_global_assignment -name MISC_FILE "C:/Users/Paul/Documents/GitHub/Processor/Processor.dpf"
+set_global_assignment -name VHDL_FILE program_counter.vhd
+set_global_assignment -name BDF_FILE processor.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Processor.vwf

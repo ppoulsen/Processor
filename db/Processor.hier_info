@@ -1,0 +1,47 @@
+|Processor
+a_out[0] <= program_counter:inst.a_out[0]
+a_out[1] <= program_counter:inst.a_out[1]
+a_out[2] <= program_counter:inst.a_out[2]
+a_out[3] <= program_counter:inst.a_out[3]
+a_out[4] <= program_counter:inst.a_out[4]
+a_out[5] <= program_counter:inst.a_out[5]
+a_out[6] <= program_counter:inst.a_out[6]
+a_out[7] <= program_counter:inst.a_out[7]
+clk_in => program_counter:inst.clk_in
+a_in[0] => program_counter:inst.a_in[0]
+a_in[1] => program_counter:inst.a_in[1]
+a_in[2] => program_counter:inst.a_in[2]
+a_in[3] => program_counter:inst.a_in[3]
+a_in[4] => program_counter:inst.a_in[4]
+a_in[5] => program_counter:inst.a_in[5]
+a_in[6] => program_counter:inst.a_in[6]
+a_in[7] => program_counter:inst.a_in[7]
+
+
+|Processor|program_counter:inst
+a_in[0] => a_out[0]~reg0.DATAIN
+a_in[1] => a_out[1]~reg0.DATAIN
+a_in[2] => a_out[2]~reg0.DATAIN
+a_in[3] => a_out[3]~reg0.DATAIN
+a_in[4] => a_out[4]~reg0.DATAIN
+a_in[5] => a_out[5]~reg0.DATAIN
+a_in[6] => a_out[6]~reg0.DATAIN
+a_in[7] => a_out[7]~reg0.DATAIN
+clk_in => a_out[7]~reg0.CLK
+clk_in => a_out[6]~reg0.CLK
+clk_in => a_out[5]~reg0.CLK
+clk_in => a_out[4]~reg0.CLK
+clk_in => a_out[3]~reg0.CLK
+clk_in => a_out[2]~reg0.CLK
+clk_in => a_out[1]~reg0.CLK
+clk_in => a_out[0]~reg0.CLK
+a_out[0] <= a_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a_out[1] <= a_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a_out[2] <= a_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a_out[3] <= a_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a_out[4] <= a_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a_out[5] <= a_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a_out[6] <= a_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+a_out[7] <= a_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
