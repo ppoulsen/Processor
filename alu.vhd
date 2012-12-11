@@ -5,9 +5,9 @@ use ieee.numeric_std.all;
 ENTITY alu IS
 	PORT(x, y : IN STD_LOGIC_VECTOR(7 DOWNTO 0); -- input args
 		opcode : IN STD_LOGIC_VECTOR(2 DOWNTO 0); -- opcodes for defined in excel
-	    result : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)); -- result
-	    less_than : OUT STD_LOGIC_VECTOR(7 DOWNTO 0));
-	    zero : OUT BIT;
+	    result : OUT STD_LOGIC_VECTOR(7 DOWNTO 0); -- result
+	    less_than : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+	    zero : OUT BIT);
 END alu;
 
 ARCHITECTURE dataflow OF alu IS
