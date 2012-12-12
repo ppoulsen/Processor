@@ -12,7 +12,7 @@ END mux_3bit;
 
 ARCHITECTURE dataflow OF mux_3bit IS
 BEGIN
-	PROCESS (mux2_choice)
+	PROCESS (mux2_choice, mux2_a, mux2_b)
 	BEGIN
 		if (mux2_choice = '0') THEN
 			mux2_out <= mux2_a;

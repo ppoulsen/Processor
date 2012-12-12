@@ -1,5 +1,5 @@
 Flow report for Processor
-Thu Dec 06 22:52:54 2012
+Tue Dec 11 23:26:49 2012
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; Flow Summary                                                           ;
 +-------------------------+----------------------------------------------+
-; Flow Status             ; Successful - Thu Dec 06 22:52:54 2012        ;
+; Flow Status             ; Successful - Tue Dec 11 23:26:49 2012        ;
 ; Quartus II Version      ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
 ; Revision Name           ; Processor                                    ;
 ; Top-level Entity Name   ; processor                                    ;
@@ -46,9 +46,9 @@ applicable agreement for further details.
 ; Device                  ; EPF10K70RC240-4                              ;
 ; Timing Models           ; Final                                        ;
 ; Met timing requirements ; Yes                                          ;
-; Total logic elements    ; 8 / 3,744 ( < 1 % )                          ;
-; Total pins              ; 18 / 189 ( 10 % )                            ;
-; Total memory bits       ; 0 / 18,432 ( 0 % )                           ;
+; Total logic elements    ; 266 / 3,744 ( 7 % )                          ;
+; Total pins              ; 10 / 189 ( 5 % )                             ;
+; Total memory bits       ; 5,632 / 18,432 ( 31 % )                      ;
 +-------------------------+----------------------------------------------+
 
 
@@ -57,7 +57,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/06/2012 22:52:48 ;
+; Start date & time ; 12/11/2012 23:26:41 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Processor           ;
 +-------------------+---------------------+
@@ -68,10 +68,22 @@ applicable agreement for further details.
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                    ; Value                                                  ; Default Value ; Entity Name ; Section Id     ;
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID              ; 128527083110657.135485596806552                        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID              ; 128527083110657.135529000107152                        ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_ROM                                                ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_RAM_DQ                                             ; --            ; --          ; --             ;
+; IP_TOOL_NAME                       ; LPM_ROM                                                ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
+; IP_TOOL_VERSION                    ; 9.0                                                    ; --            ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP             ; 85                                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP             ; 0                                                      ; --            ; --          ; --             ;
 ; MISC_FILE                          ; C:/Users/Paul/Documents/GitHub/Processor/Processor.dpf ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_rom0.bsf                                           ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_rom0.cmp                                           ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_ram_dq0.bsf                                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_ram_dq0.cmp                                        ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_rom1.bsf                                           ; --            ; --          ; --             ;
+; MISC_FILE                          ; lpm_rom1.cmp                                           ; --            ; --          ; --             ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS ; Off                                                    ; --            ; --          ; eda_blast_fpga ;
 +------------------------------------+--------------------------------------------------------+---------------+-------------+----------------+
 
@@ -81,11 +93,11 @@ applicable agreement for further details.
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name             ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis    ; 00:00:01     ; 1.0                     ; 233 MB              ; 00:00:01                           ;
-; Fitter                  ; 00:00:01     ; 1.0                     ; 194 MB              ; 00:00:02                           ;
-; Assembler               ; 00:00:00     ; 1.0                     ; 197 MB              ; 00:00:00                           ;
-; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 165 MB              ; 00:00:00                           ;
-; Total                   ; 00:00:02     ; --                      ; --                  ; 00:00:03                           ;
+; Analysis & Synthesis    ; 00:00:03     ; 1.0                     ; 242 MB              ; 00:00:02                           ;
+; Fitter                  ; 00:00:04     ; 1.0                     ; 197 MB              ; 00:00:04                           ;
+; Assembler               ; 00:00:00     ; 1.0                     ; 198 MB              ; 00:00:00                           ;
+; Classic Timing Analyzer ; 00:00:00     ; 1.0                     ; 166 MB              ; 00:00:00                           ;
+; Total                   ; 00:00:07     ; --                      ; --                  ; 00:00:06                           ;
 +-------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

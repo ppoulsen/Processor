@@ -45,11 +45,22 @@ set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
-set_global_assignment -name VHDL_FILE Processor.vhd
 set_global_assignment -name FLEX10K_DEVICE_IO_STANDARD TTL
 set_location_assignment PIN_91 -to "on-board_oscillator"
-set_instance_assignment -name RESERVE_PIN "AS INPUT TRI-STATED" -to "on-board_oscillator"
 set_global_assignment -name MISC_FILE "C:/Users/Paul/Documents/GitHub/Processor/Processor.dpf"
+set_global_assignment -name VHDL_FILE clock1hz.vhd
+set_global_assignment -name VHDL_FILE sign_extender.vhd
+set_global_assignment -name VHDL_FILE mux_3_bit.vhd
+set_global_assignment -name VHDL_FILE mux.vhd
+set_global_assignment -name VHDL_FILE eightbit_register_file.vhd
+set_global_assignment -name VHDL_FILE controller.vhd
+set_global_assignment -name VHDL_FILE alu_control.vhd
+set_global_assignment -name VHDL_FILE alu.vhd
+set_global_assignment -name VHDL_FILE adder.vhd
 set_global_assignment -name VHDL_FILE program_counter.vhd
 set_global_assignment -name BDF_FILE processor.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Processor.vwf
+set_global_assignment -name QIP_FILE lpm_rom0.qip
+set_global_assignment -name QIP_FILE lpm_ram_dq0.qip
+set_global_assignment -name QIP_FILE lpm_rom1.qip
+set_global_assignment -name VHDL_FILE q_splitter.vhd

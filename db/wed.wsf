@@ -38,23 +38,23 @@ VECTOR("C:/Users/Paul/Documents/GitHub/Processor/db/Processor.sim.cvwf")
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "a_in";
+		SIGNAL = "on-board_oscillator";
 		INDEX = 0;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "a_in[7]";
-		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "a_in[6]";
+		SIGNAL = "pc";
+		INDEX = 1;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "pc[7]";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -62,7 +62,7 @@ VECTOR("C:/Users/Paul/Documents/GitHub/Processor/db/Processor.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "a_in[5]";
+		SIGNAL = "pc[6]";
 		INDEX = 3;
 		FORMAT = E;
 		SCALE = 1;
@@ -70,7 +70,7 @@ VECTOR("C:/Users/Paul/Documents/GitHub/Processor/db/Processor.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "a_in[4]";
+		SIGNAL = "pc[5]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -78,7 +78,7 @@ VECTOR("C:/Users/Paul/Documents/GitHub/Processor/db/Processor.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "a_in[3]";
+		SIGNAL = "pc[4]";
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -86,7 +86,7 @@ VECTOR("C:/Users/Paul/Documents/GitHub/Processor/db/Processor.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "a_in[2]";
+		SIGNAL = "pc[3]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -94,7 +94,7 @@ VECTOR("C:/Users/Paul/Documents/GitHub/Processor/db/Processor.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "a_in[1]";
+		SIGNAL = "pc[2]";
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -102,7 +102,7 @@ VECTOR("C:/Users/Paul/Documents/GitHub/Processor/db/Processor.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "a_in[0]";
+		SIGNAL = "pc[1]";
 		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
@@ -110,7 +110,7 @@ VECTOR("C:/Users/Paul/Documents/GitHub/Processor/db/Processor.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "clk_in";
+		SIGNAL = "pc[0]";
 		INDEX = 9;
 		FORMAT = E;
 		SCALE = 1;
@@ -118,72 +118,8 @@ VECTOR("C:/Users/Paul/Documents/GitHub/Processor/db/Processor.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "a_out";
+		SIGNAL = "reset";
 		INDEX = 10;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "a_out[7]";
-		INDEX = 11;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "a_out[6]";
-		INDEX = 12;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "a_out[5]";
-		INDEX = 13;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "a_out[4]";
-		INDEX = 14;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "a_out[3]";
-		INDEX = 15;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "a_out[2]";
-		INDEX = 16;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "a_out[1]";
-		INDEX = 17;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "a_out[0]";
-		INDEX = 18;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

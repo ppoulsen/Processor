@@ -2,34 +2,24 @@
 Timing Analyzer Summary
 --------------------------------------------------------------------------------------
 
-Type           : Worst-case tsu
-Slack          : N/A
-Required Time  : None
-Actual Time    : 12.700 ns
-From           : a_in[3]
-To             : program_counter:inst|a_out[3]
-From Clock     : --
-To Clock       : clk_in
-Failed Paths   : 0
-
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 16.100 ns
-From           : program_counter:inst|a_out[7]
-To             : a_out[7]
-From Clock     : clk_in
+Actual Time    : 25.300 ns
+From           : program_counter:inst|lpm_counter:a_out_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[6]
+To             : pc[6]
+From Clock     : on-board_oscillator
 To Clock       : --
 Failed Paths   : 0
 
-Type           : Worst-case th
+Type           : Clock Setup: 'on-board_oscillator'
 Slack          : N/A
 Required Time  : None
-Actual Time    : -1.000 ns
-From           : a_in[6]
-To             : program_counter:inst|a_out[6]
-From Clock     : --
-To Clock       : clk_in
+Actual Time    : 14.86 MHz ( period = 67.300 ns )
+From           : lpm_rom0:inst2|lpm_rom:lpm_rom_component|altrom:srom|q[10]
+To             : program_counter:inst|lpm_counter:a_out_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[0]
+From Clock     : on-board_oscillator
+To Clock       : on-board_oscillator
 Failed Paths   : 0
 
 Type           : Total number of failed paths

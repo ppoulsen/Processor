@@ -3,7 +3,7 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 ENTITY alu_control IS
-	PORT(immediate_op : IN STD_LOGIC_VECTOR(2 DOWNTO 0); -- bottom three bits of instruction
+	PORT(immediate_op : IN STD_LOGIC_VECTOR(5 DOWNTO 0); -- bottom three bits of instruction
 		control_op : IN STD_LOGIC_VECTOR(2 DOWNTO 0); -- three bits from control
 		alu_src : IN BIT; -- 1 if using immediate, 0 if using control
 	    result : OUT STD_LOGIC_VECTOR(2 DOWNTO 0)); -- result
@@ -17,7 +17,7 @@ BEGIN
 			WHEN '0' =>
 				result <= control_op;
 			WHEN '1' =>
-				result <= immediate_op;
+				result <= immediate_op(2 DOWNTO 0);
 		END CASE;
 	END PROCESS;
 END dataflow;

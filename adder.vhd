@@ -12,6 +12,6 @@ ARCHITECTURE dataflow OF adder IS
 BEGIN
 	PROCESS (adder_in)
 	BEGIN
-		adder_out <= STD_LOGIC_VECTOR(UNSIGNED(adder_in) + 2);
+		adder_out <= STD_LOGIC_VECTOR(UNSIGNED(adder_in) + 1);
 	END PROCESS;
 END dataflow;

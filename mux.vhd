@@ -12,7 +12,7 @@ END mux;
 
 ARCHITECTURE dataflow OF mux IS
 BEGIN
-	PROCESS (mux1_choice)
+	PROCESS (mux1_choice, mux1_a, mux1_b)
 	BEGIN
 		if (mux1_choice = '0') THEN
 			mux1_out <= mux1_a;
