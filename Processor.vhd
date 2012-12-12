@@ -17,20 +17,20 @@ use ieee.std_logic_1164.all;
 library altera;
 use altera.altera_syn_attributes.all;
 
-entity Processor is
+entity ProcessorPins is
 	port
 	(
 		on_board_oscillator : in std_logic;
 		FLEX_PB1 : in std_logic;
 		FLEX_PB2 : in std_logic;
-		FLEX_SWITCH-1 : in std_logic;
-		FLEX_SWITCH-2 : in std_logic;
-		FLEX_SWITCH-3 : in std_logic;
-		FLEX_SWITCH-4 : in std_logic;
-		FLEX_SWITCH-5 : in std_logic;
-		FLEX_SWITCH-6 : in std_logic;
-		FLEX_SWITCH-7 : in std_logic;
-		FLEX_SWITCH-8 : in std_logic;
+		FLEX_SWITCH_1 : in std_logic;
+		FLEX_SWITCH_2 : in std_logic;
+		FLEX_SWITCH_3 : in std_logic;
+		FLEX_SWITCH_4 : in std_logic;
+		FLEX_SWITCH_5 : in std_logic;
+		FLEX_SWITCH_6 : in std_logic;
+		FLEX_SWITCH_7 : in std_logic;
+		FLEX_SWITCH_8 : in std_logic;
 		a_1 : in std_logic;
 		b_1 : in std_logic;
 		c_1 : in std_logic;
@@ -49,9 +49,9 @@ entity Processor is
 		decimal_2 : in std_logic
 	);
 
-end Processor;
+end ProcessorPins;
 
-architecture ppl_type of Processor is
+architecture ppl_type of ProcessorPins is
 
 begin
 
