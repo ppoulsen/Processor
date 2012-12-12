@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 25.300 ns
-From           : program_counter:inst|lpm_counter:a_out_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[6]
-To             : pc[6]
+Actual Time    : 98.600 ns
+From           : lpm_rom0:inst2|lpm_rom:lpm_rom_component|altrom:srom|q[4]
+To             : mux_output[4]
 From Clock     : on-board_oscillator
 To Clock       : --
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'on-board_oscillator'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.86 MHz ( period = 67.300 ns )
-From           : lpm_rom0:inst2|lpm_rom:lpm_rom_component|altrom:srom|q[10]
-To             : program_counter:inst|lpm_counter:a_out_rtl_0|alt_counter_f10ke:wysi_counter|counter_cell[0]
+Actual Time    : 13.11 MHz ( period = 76.300 ns )
+From           : lpm_rom0:inst2|lpm_rom:lpm_rom_component|altrom:srom|q[4]
+To             : program_counter:inst|a_out[0]
 From Clock     : on-board_oscillator
 To Clock       : on-board_oscillator
 Failed Paths   : 0
