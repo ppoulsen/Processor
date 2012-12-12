@@ -36,7 +36,7 @@
  ------------------------------------------------------------------------------
 
 
-File Generation Date & Time: Wed Dec 12 00:35:12 2012
+File Generation Date & Time: Wed Dec 12 02:49:04 2012
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 CHIP  "Processor"  ASSIGNED TO AN: EPF10K70RC240-4
 
@@ -47,56 +47,56 @@ CONF_DONE                    : 2         : bidir  :                   :         
 nCEO                         : 3         : output :                   :         :           :                
 TDO                          : 4         : output :                   :         :           :                
 VCC_INT                      : 5         : power  :                   : 5.0V    :           :                
-alu_out[6]                   : 6         : output : TTL               :         :           : N              
-rom_output[7]                : 7         : output : TTL               :         :           : N              
-pc[7]                        : 8         : output : TTL               :         :           : N              
+GND*                         : 6         :        :                   :         :           :                
+GND*                         : 7         :        :                   :         :           :                
+GND*                         : 8         :        :                   :         :           :                
 GND*                         : 9         :        :                   :         :           :                
 GND_INT                      : 10        : gnd    :                   :         :           :                
 GND*                         : 11        :        :                   :         :           :                
-register_one[1]              : 12        : output : TTL               :         :           : N              
-alu_out[7]                   : 13        : output : TTL               :         :           : N              
-adder_output[4]              : 14        : output : TTL               :         :           : N              
-alu_mux_out[2]               : 15        : output : TTL               :         :           : N              
+register_one[2]              : 12        : output : TTL               :         :           : N              
+clock1_out                   : 13        : output : TTL               :         :           : N              
+mux_output[2]                : 14        : output : TTL               :         :           : N              
+pc[6]                        : 15        : output : TTL               :         :           : N              
 VCC_INT                      : 16        : power  :                   : 5.0V    :           :                
-adder_output[6]              : 17        : output : TTL               :         :           : N              
-adder_output[7]              : 18        : output : TTL               :         :           : N              
-GND*                         : 19        :        :                   :         :           :                
-rom_output[11]               : 20        : output : TTL               :         :           : N              
-pc[6]                        : 21        : output : TTL               :         :           : N              
+pc[3]                        : 17        : output : TTL               :         :           : N              
+pc[5]                        : 18        : output : TTL               :         :           : N              
+mux_output[1]                : 19        : output : TTL               :         :           : N              
+rom_output[7]                : 20        : output : TTL               :         :           : N              
+pc[1]                        : 21        : output : TTL               :         :           : N              
 GND_INT                      : 22        : gnd    :                   :         :           :                
-GND*                         : 23        :        :                   :         :           :                
-GND*                         : 24        :        :                   :         :           :                
-rom_output[13]               : 25        : output : TTL               :         :           : N              
-GND*                         : 26        :        :                   :         :           :                
+rom_output[12]               : 23        : output : TTL               :         :           : N              
+rom_output[5]                : 24        : output : TTL               :         :           : N              
+GND*                         : 25        :        :                   :         :           :                
+rom_output[1]                : 26        : output : TTL               :         :           : N              
 VCC_INT                      : 27        : power  :                   : 5.0V    :           :                
 GND*                         : 28        :        :                   :         :           :                
-GND*                         : 29        :        :                   :         :           :                
-GND*                         : 30        :        :                   :         :           :                
-rom_output[3]                : 31        : output : TTL               :         :           : N              
+adder_output[6]              : 29        : output : TTL               :         :           : N              
+adder_output[0]              : 30        : output : TTL               :         :           : N              
+mux_less_than[4]             : 31        : output : TTL               :         :           : N              
 GND_INT                      : 32        : gnd    :                   :         :           :                
 GND*                         : 33        :        :                   :         :           :                
-GND*                         : 34        :        :                   :         :           :                
-GND*                         : 35        :        :                   :         :           :                
-GND*                         : 36        :        :                   :         :           :                
+mem_alu_mux[1]               : 34        : output : TTL               :         :           : N              
+alu_out[3]                   : 35        : output : TTL               :         :           : N              
+pc[2]                        : 36        : output : TTL               :         :           : N              
 VCC_INT                      : 37        : power  :                   : 5.0V    :           :                
-GND*                         : 38        :        :                   :         :           :                
+rom_output[6]                : 38        : output : TTL               :         :           : N              
 GND*                         : 39        :        :                   :         :           :                
 GND*                         : 40        :        :                   :         :           :                
-mux_output[4]                : 41        : output : TTL               :         :           : N              
+rom_output[13]               : 41        : output : TTL               :         :           : N              
 GND_INT                      : 42        : gnd    :                   :         :           :                
 GND*                         : 43        :        :                   :         :           :                
-GND*                         : 44        :        :                   :         :           :                
-GND*                         : 45        :        :                   :         :           :                
+register_two[2]              : 44        : output : TTL               :         :           : N              
+alu_out[2]                   : 45        : output : TTL               :         :           : N              
 GND*                         : 46        :        :                   :         :           :                
 VCC_INT                      : 47        : power  :                   : 5.0V    :           :                
 GND*                         : 48        :        :                   :         :           :                
-GND*                         : 49        :        :                   :         :           :                
+mux_less_than[7]             : 49        : output : TTL               :         :           : N              
 GND*                         : 50        :        :                   :         :           :                
 GND*                         : 51        :        :                   :         :           :                
 GND_INT                      : 52        : gnd    :                   :         :           :                
-GND*                         : 53        :        :                   :         :           :                
+mux_less_than[6]             : 53        : output : TTL               :         :           : N              
 GND*                         : 54        :        :                   :         :           :                
-rom_output[5]                : 55        : output : TTL               :         :           : N              
+rom_output[14]               : 55        : output : TTL               :         :           : N              
 GND*                         : 56        :        :                   :         :           :                
 VCC_INT                      : 57        : power  :                   : 5.0V    :           :                
 TMS                          : 58        : input  :                   :         :           :                
@@ -106,59 +106,59 @@ GND*                         : 61        :        :                   :         
 GND*                         : 62        :        :                   :         :           :                
 GND*                         : 63        :        :                   :         :           :                
 GND*                         : 64        :        :                   :         :           :                
-mux_output[7]                : 65        : output : TTL               :         :           : N              
-alu_out[4]                   : 66        : output : TTL               :         :           : N              
-GND*                         : 67        :        :                   :         :           :                
+GND*                         : 65        :        :                   :         :           :                
+mux_output[7]                : 66        : output : TTL               :         :           : N              
+mem_alu_mux[7]               : 67        : output : TTL               :         :           : N              
 GND*                         : 68        :        :                   :         :           :                
 GND_INT                      : 69        : gnd    :                   :         :           :                
-mem_alu_mux[5]               : 70        : output : TTL               :         :           : N              
-GND*                         : 71        :        :                   :         :           :                
+GND*                         : 70        :        :                   :         :           :                
+clock2_out                   : 71        : output : TTL               :         :           : N              
 GND*                         : 72        :        :                   :         :           :                
 GND*                         : 73        :        :                   :         :           :                
 GND*                         : 74        :        :                   :         :           :                
-pc[1]                        : 75        : output : TTL               :         :           : N              
-GND*                         : 76        :        :                   :         :           :                
+GND*                         : 75        :        :                   :         :           :                
+alu_mux_out[5]               : 76        : output : TTL               :         :           : N              
 VCC_INT                      : 77        : power  :                   : 5.0V    :           :                
 GND*                         : 78        :        :                   :         :           :                
-pc[4]                        : 79        : output : TTL               :         :           : N              
-GND*                         : 80        :        :                   :         :           :                
-mux_output[2]                : 81        : output : TTL               :         :           : N              
-GND*                         : 82        :        :                   :         :           :                
-GND*                         : 83        :        :                   :         :           :                
-GND*                         : 84        :        :                   :         :           :                
+GND*                         : 79        :        :                   :         :           :                
+mux_output[6]                : 80        : output : TTL               :         :           : N              
+pc[4]                        : 81        : output : TTL               :         :           : N              
+adder_output[7]              : 82        : output : TTL               :         :           : N              
+adder_output[2]              : 83        : output : TTL               :         :           : N              
+register_one[3]              : 84        : output : TTL               :         :           : N              
 GND_INT                      : 85        : gnd    :                   :         :           :                
 GND*                         : 86        :        :                   :         :           :                
-register_one[2]              : 87        : output : TTL               :         :           : N              
-adder_output[1]              : 88        : output : TTL               :         :           : N              
+register_one[0]              : 87        : output : TTL               :         :           : N              
+mux_less_than[1]             : 88        : output : TTL               :         :           : N              
 VCC_INT                      : 89        : power  :                   : 5.0V    :           :                
 GND+                         : 90        :        :                   :         :           :                
 on-board_oscillator          : 91        : input  : TTL               :         :           : Y              
 GND+                         : 92        :        :                   :         :           :                
 GND_INT                      : 93        : gnd    :                   :         :           :                
-alu_op_code[0]               : 94        : output : TTL               :         :           : N              
-alu_out[2]                   : 95        : output : TTL               :         :           : N              
+alu_mux_out[1]               : 94        : output : TTL               :         :           : N              
+GND*                         : 95        :        :                   :         :           :                
 VCC_INT                      : 96        : power  :                   : 5.0V    :           :                
-register_two[7]              : 97        : output : TTL               :         :           : N              
-GND*                         : 98        :        :                   :         :           :                
-alu_mux_out[5]               : 99        : output : TTL               :         :           : N              
+register_two[0]              : 97        : output : TTL               :         :           : N              
+alu_mux_out[3]               : 98        : output : TTL               :         :           : N              
+GND*                         : 99        :        :                   :         :           :                
 GND*                         : 100       :        :                   :         :           :                
-alu_mux_out[1]               : 101       : output : TTL               :         :           : N              
-alu_op_code[2]               : 102       : output : TTL               :         :           : N              
-register_one[0]              : 103       : output : TTL               :         :           : N              
+GND*                         : 101       :        :                   :         :           :                
+alu_op_code[1]               : 102       : output : TTL               :         :           : N              
+alu_out[6]                   : 103       : output : TTL               :         :           : N              
 GND_INT                      : 104       : gnd    :                   :         :           :                
-alu_mux_out[0]               : 105       : output : TTL               :         :           : N              
-register_two[3]              : 106       : output : TTL               :         :           : N              
-clocl_output                 : 107       : output : TTL               :         :           : N              
+alu_out[0]                   : 105       : output : TTL               :         :           : N              
+GND*                         : 106       :        :                   :         :           :                
+alu_mux_out[2]               : 107       : output : TTL               :         :           : N              
 GND*                         : 108       :        :                   :         :           :                
-GND*                         : 109       :        :                   :         :           :                
+alu_out[4]                   : 109       : output : TTL               :         :           : N              
 GND*                         : 110       :        :                   :         :           :                
-pc[3]                        : 111       : output : TTL               :         :           : N              
+alu_op_code[2]               : 111       : output : TTL               :         :           : N              
 VCC_INT                      : 112       : power  :                   : 5.0V    :           :                
-GND*                         : 113       :        :                   :         :           :                
+alu_mux_out[6]               : 113       : output : TTL               :         :           : N              
 GND*                         : 114       :        :                   :         :           :                
-GND*                         : 115       :        :                   :         :           :                
-alu_mux_out[7]               : 116       : output : TTL               :         :           : N              
-GND*                         : 117       :        :                   :         :           :                
+alu_out[5]                   : 115       : output : TTL               :         :           : N              
+mem_alu_mux[3]               : 116       : output : TTL               :         :           : N              
+mem_alu_mux[2]               : 117       : output : TTL               :         :           : N              
 GND*                         : 118       :        :                   :         :           :                
 GND*                         : 119       :        :                   :         :           :                
 alu_mux_out[4]               : 120       : output : TTL               :         :           : N              
@@ -169,116 +169,116 @@ MSEL0                        : 124       : input  :                   :         
 GND_INT                      : 125       : gnd    :                   :         :           :                
 GND*                         : 126       :        :                   :         :           :                
 GND*                         : 127       :        :                   :         :           :                
-rom_output[9]                : 128       : output : TTL               :         :           : N              
+GND*                         : 128       :        :                   :         :           :                
 GND*                         : 129       :        :                   :         :           :                
 VCC_INT                      : 130       : power  :                   : 5.0V    :           :                
-rom_output[15]               : 131       : output : TTL               :         :           : N              
-GND*                         : 132       :        :                   :         :           :                
-GND*                         : 133       :        :                   :         :           :                
+rom_output[0]                : 131       : output : TTL               :         :           : N              
+alu_out[1]                   : 132       : output : TTL               :         :           : N              
+rom_output[15]               : 133       : output : TTL               :         :           : N              
 GND*                         : 134       :        :                   :         :           :                
 GND_INT                      : 135       : gnd    :                   :         :           :                
 GND*                         : 136       :        :                   :         :           :                
 GND*                         : 137       :        :                   :         :           :                
-register_two[1]              : 138       : output : TTL               :         :           : N              
-alu_mux_out[3]               : 139       : output : TTL               :         :           : N              
+register_two[7]              : 138       : output : TTL               :         :           : N              
+register_two[6]              : 139       : output : TTL               :         :           : N              
 VCC_INT                      : 140       : power  :                   : 5.0V    :           :                
-GND*                         : 141       :        :                   :         :           :                
-rom_output[14]               : 142       : output : TTL               :         :           : N              
-GND*                         : 143       :        :                   :         :           :                
-mem_alu_mux[3]               : 144       : output : TTL               :         :           : N              
+register_two[1]              : 141       : output : TTL               :         :           : N              
+GND*                         : 142       :        :                   :         :           :                
+register_two[5]              : 143       : output : TTL               :         :           : N              
+GND*                         : 144       :        :                   :         :           :                
 GND_INT                      : 145       : gnd    :                   :         :           :                
 GND*                         : 146       :        :                   :         :           :                
-GND*                         : 147       :        :                   :         :           :                
+mux_less_than[0]             : 147       : output : TTL               :         :           : N              
 GND*                         : 148       :        :                   :         :           :                
-rom_output[1]                : 149       : output : TTL               :         :           : N              
+rom_output[3]                : 149       : output : TTL               :         :           : N              
 VCC_INT                      : 150       : power  :                   : 5.0V    :           :                
-rom_output[6]                : 151       : output : TTL               :         :           : N              
-rom_output[0]                : 152       : output : TTL               :         :           : N              
+GND*                         : 151       :        :                   :         :           :                
+adder_output[3]              : 152       : output : TTL               :         :           : N              
 GND*                         : 153       :        :                   :         :           :                
-mem_alu_mux[0]               : 154       : output : TTL               :         :           : N              
+GND*                         : 154       :        :                   :         :           :                
 GND_INT                      : 155       : gnd    :                   :         :           :                
-GND*                         : 156       :        :                   :         :           :                
-rom_output[2]                : 157       : output : TTL               :         :           : N              
-rom_output[12]               : 158       : output : TTL               :         :           : N              
+mem_alu_mux[4]               : 156       : output : TTL               :         :           : N              
+register_one[5]              : 157       : output : TTL               :         :           : N              
+GND*                         : 158       :        :                   :         :           :                
 GND*                         : 159       :        :                   :         :           :                
 VCC_INT                      : 160       : power  :                   : 5.0V    :           :                
-rom_output[8]                : 161       : output : TTL               :         :           : N              
-GND*                         : 162       :        :                   :         :           :                
-GND*                         : 163       :        :                   :         :           :                
-adder_output[0]              : 164       : output : TTL               :         :           : N              
+rom_output[9]                : 161       : output : TTL               :         :           : N              
+rom_output[10]               : 162       : output : TTL               :         :           : N              
+rom_output[11]               : 163       : output : TTL               :         :           : N              
+mux_read                     : 164       : output : TTL               :         :           : N              
 GND_INT                      : 165       : gnd    :                   :         :           :                
-alu_out[5]                   : 166       : output : TTL               :         :           : N              
-adder_output[3]              : 167       : output : TTL               :         :           : N              
-register_two[5]              : 168       : output : TTL               :         :           : N              
-register_two[2]              : 169       : output : TTL               :         :           : N              
+pc[0]                        : 166       : output : TTL               :         :           : N              
+rom_output[8]                : 167       : output : TTL               :         :           : N              
+rom_output[4]                : 168       : output : TTL               :         :           : N              
+mem_alu_mux[5]               : 169       : output : TTL               :         :           : N              
 VCC_INT                      : 170       : power  :                   : 5.0V    :           :                
 GND*                         : 171       :        :                   :         :           :                
-rom_output[4]                : 172       : output : TTL               :         :           : N              
-rom_output[10]               : 173       : output : TTL               :         :           : N              
-register_two[6]              : 174       : output : TTL               :         :           : N              
-pc[0]                        : 175       : output : TTL               :         :           : N              
+rom_output[2]                : 172       : output : TTL               :         :           : N              
+mux_less_than[3]             : 173       : output : TTL               :         :           : N              
+GND*                         : 174       :        :                   :         :           :                
+GND*                         : 175       :        :                   :         :           :                
 GND_INT                      : 176       : gnd    :                   :         :           :                
 TDI                          : 177       : input  :                   :         :           :                
 nCE                          : 178       : input  :                   :         :           :                
 DCLK                         : 179       : bidir  :                   :         :           :                
 DATA0                        : 180       : input  :                   :         :           :                
-GND*                         : 181       :        :                   :         :           :                
+register_two[4]              : 181       : output : TTL               :         :           : N              
 GND*                         : 182       :        :                   :         :           :                
-alu_mux_out[6]               : 183       : output : TTL               :         :           : N              
-mem_alu_mux[1]               : 184       : output : TTL               :         :           : N              
+GND*                         : 183       :        :                   :         :           :                
+GND*                         : 184       :        :                   :         :           :                
 GND*                         : 185       :        :                   :         :           :                
-GND*                         : 186       :        :                   :         :           :                
-GND*                         : 187       :        :                   :         :           :                
-mux_output[3]                : 188       : output : TTL               :         :           : N              
+alu_mux_out[7]               : 186       : output : TTL               :         :           : N              
+register_one[1]              : 187       : output : TTL               :         :           : N              
+GND*                         : 188       :        :                   :         :           :                
 VCC_INT                      : 189       : power  :                   : 5.0V    :           :                
-GND*                         : 190       :        :                   :         :           :                
-alu_out[0]                   : 191       : output : TTL               :         :           : N              
-mem_alu_mux[4]               : 192       : output : TTL               :         :           : N              
-register_one[3]              : 193       : output : TTL               :         :           : N              
-register_two[0]              : 194       : output : TTL               :         :           : N              
+alu_op_code[0]               : 190       : output : TTL               :         :           : N              
+GND*                         : 191       :        :                   :         :           :                
+GND*                         : 192       :        :                   :         :           :                
+GND*                         : 193       :        :                   :         :           :                
+alu_out[7]                   : 194       : output : TTL               :         :           : N              
 GND*                         : 195       :        :                   :         :           :                
-GND*                         : 196       :        :                   :         :           :                
+mem_alu_mux[0]               : 196       : output : TTL               :         :           : N              
 GND_INT                      : 197       : gnd    :                   :         :           :                
-alu_op_code[1]               : 198       : output : TTL               :         :           : N              
-alu_out[1]                   : 199       : output : TTL               :         :           : N              
+GND*                         : 198       :        :                   :         :           :                
+GND*                         : 199       :        :                   :         :           :                
 GND*                         : 200       :        :                   :         :           :                
-register_one[6]              : 201       : output : TTL               :         :           : N              
-register_two[4]              : 202       : output : TTL               :         :           : N              
-register_one[4]              : 203       : output : TTL               :         :           : N              
-register_one[5]              : 204       : output : TTL               :         :           : N              
+alu_arg                      : 201       : output : TTL               :         :           : N              
+register_one[4]              : 202       : output : TTL               :         :           : N              
+register_one[6]              : 203       : output : TTL               :         :           : N              
+register_two[3]              : 204       : output : TTL               :         :           : N              
 VCC_INT                      : 205       : power  :                   : 5.0V    :           :                
-register_one[7]              : 206       : output : TTL               :         :           : N              
+alu_mux_out[0]               : 206       : output : TTL               :         :           : N              
 GND*                         : 207       :        :                   :         :           :                
 GND*                         : 208       :        :                   :         :           :                
-mem_alu_mux[7]               : 209       : output : TTL               :         :           : N              
+GND*                         : 209       :        :                   :         :           :                
 GND+                         : 210       :        :                   :         :           :                
 GND+                         : 211       :        :                   :         :           :                
 reset                        : 212       : input  : TTL               :         :           : N              
-adder_output[5]              : 213       : output : TTL               :         :           : N              
-adder_output[2]              : 214       : output : TTL               :         :           : N              
-GND*                         : 215       :        :                   :         :           :                
+mux_less_than[2]             : 213       : output : TTL               :         :           : N              
+mux_less_than[5]             : 214       : output : TTL               :         :           : N              
+register_one[7]              : 215       : output : TTL               :         :           : N              
 GND_INT                      : 216       : gnd    :                   :         :           :                
-mem_alu_mux[6]               : 217       : output : TTL               :         :           : N              
-GND*                         : 218       :        :                   :         :           :                
-GND*                         : 219       :        :                   :         :           :                
-GND*                         : 220       :        :                   :         :           :                
-pc[2]                        : 221       : output : TTL               :         :           : N              
-mux_output[6]                : 222       : output : TTL               :         :           : N              
-mux_output[0]                : 223       : output : TTL               :         :           : N              
+adder_output[1]              : 217       : output : TTL               :         :           : N              
+adder_output[4]              : 218       : output : TTL               :         :           : N              
+adder_output[5]              : 219       : output : TTL               :         :           : N              
+mux_output[4]                : 220       : output : TTL               :         :           : N              
+mux_output[3]                : 221       : output : TTL               :         :           : N              
+GND*                         : 222       :        :                   :         :           :                
+GND*                         : 223       :        :                   :         :           :                
 VCC_INT                      : 224       : power  :                   : 5.0V    :           :                
 GND*                         : 225       :        :                   :         :           :                
-mux_output[1]                : 226       : output : TTL               :         :           : N              
+mux_output[5]                : 226       : output : TTL               :         :           : N              
 GND*                         : 227       :        :                   :         :           :                
-alu_arg                      : 228       : output : TTL               :         :           : N              
+GND*                         : 228       :        :                   :         :           :                
 GND*                         : 229       :        :                   :         :           :                
 GND*                         : 230       :        :                   :         :           :                
-alu_out[3]                   : 231       : output : TTL               :         :           : N              
+clock0_out                   : 231       : output : TTL               :         :           : N              
 GND_INT                      : 232       : gnd    :                   :         :           :                
 GND*                         : 233       :        :                   :         :           :                
 GND*                         : 234       :        :                   :         :           :                
-mem_alu_mux[2]               : 235       : output : TTL               :         :           : N              
-pc[5]                        : 236       : output : TTL               :         :           : N              
-mux_output[5]                : 237       : output : TTL               :         :           : N              
+GND*                         : 235       :        :                   :         :           :                
+mux_output[0]                : 236       : output : TTL               :         :           : N              
+pc[7]                        : 237       : output : TTL               :         :           : N              
 GND*                         : 238       :        :                   :         :           :                
 GND*                         : 239       :        :                   :         :           :                
-GND*                         : 240       :        :                   :         :           :                
+mem_alu_mux[6]               : 240       : output : TTL               :         :           : N              
