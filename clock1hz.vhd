@@ -12,36 +12,42 @@ END Clock1Hz;
 ARCHITECTURE a OF Clock1Hz IS
 BEGIN
 PROCESS (reset, clk)
+	VARIABLE big_count : INTEGER RANGE 0 TO 3146;
     VARIABLE cnt : INTEGER RANGE 0 TO 3;
 BEGIN
     IF (reset = '1') THEN
         cnt := 0;
 	ELSIF (clk'EVENT AND clk = '1') THEN
-		IF (cnt = 0) THEN
-           	clock0 <= '1';
-           	clock2 <= '0';
-           	clock1 <= '0';
-           	clock3 <= '0';
-			cnt := 1;
-        ELSIF (cnt = 1) THEN
-			clock1 <= '1';
-           	clock2 <= '0';
-           	clock0 <= '0';
-           	clock3 <= '0';
-			cnt := 2;
-		ELSIF (cnt = 2) THEN
-			clock2 <= '1';
-           	clock0 <= '0';
-           	clock1 <= '0';
-           	clock3 <= '0';
-			cnt := 3;
-		ELSIF (cnt = 3) THEN
-			clock3 <= '1';
-           	clock0 <= '0';
-           	clock1 <= '0';
-           	clock2 <= '0';
-			cnt := 0;
-	    END IF;
+		IF(big_count = 3146) THEN
+			big_count := 0;
+			IF (cnt = 0) THEN
+				clock0 <= '1';
+				clock2 <= '0';
+				clock1 <= '0';
+				clock3 <= '0';
+				cnt := 1;
+			ELSIF (cnt = 1) THEN
+				clock1 <= '1';
+				clock2 <= '0';
+				clock0 <= '0';
+				clock3 <= '0';
+				cnt := 2;
+			ELSIF (cnt = 2) THEN
+				clock2 <= '1';
+				clock0 <= '0';
+				clock1 <= '0';
+				clock3 <= '0';
+				cnt := 3;
+			ELSIF (cnt = 3) THEN
+				clock3 <= '1';
+				clock0 <= '0';
+				clock1 <= '0';
+				clock2 <= '0';
+				cnt := 0;
+			END IF;
+		ELSE
+			big_count := big_count + 1;
+		END IF;
 	END IF;
 END PROCESS;
 END a;

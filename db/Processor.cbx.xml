@@ -6,6 +6,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|processor|alu:inst12|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_rjh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Processor|eightbit_register_file:inst9|altdpram:regfile[0][7]__1|lpm_mux:mux" CBX_FILE_NAME="mux_0cc.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|Processor|eightbit_register_file:inst9|altdpram:regfile[0][7]__2|lpm_decode:wdecoder" CBX_FILE_NAME="decode_off.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|processor|Clock1Hz:inst21|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_qoh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|processor|adder:inst4|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_fnh.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|processor|alu:inst12|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_sjh.tdf"/>
 	</PROJECT>
