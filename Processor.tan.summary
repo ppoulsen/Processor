@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 18.800 ns
-From           : right_in
-To             : eightbit_register_file:inst9|altdpram:regfile[0][7]__2|cells[4][1]
+Actual Time    : 21.100 ns
+From           : dip_in[2]
+To             : eightbit_register_file:inst9|altdpram:regfile[0][7]__2|cells[5][3]
 From Clock     : --
 To Clock       : on-board_oscillator
 Failed Paths   : 0
@@ -15,7 +15,7 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 52.800 ns
+Actual Time    : 44.400 ns
 From           : mem_intercept:inst27|read_switch[1]
 To             : mux_less_than[0]
 From Clock     : on-board_oscillator
@@ -25,7 +25,7 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 41.900 ns
+Actual Time    : 40.500 ns
 From           : right_in
 To             : mux_less_than[0]
 From Clock     : --
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -0.700 ns
-From           : dip_in[4]
-To             : eightbit_register_file:inst9|altdpram:regfile[0][7]__2|cells[3][5]
+Actual Time    : -3.900 ns
+From           : reset
+To             : Clock1Hz:inst21|clock5
 From Clock     : --
 To Clock       : on-board_oscillator
 Failed Paths   : 0
@@ -45,22 +45,12 @@ Failed Paths   : 0
 Type           : Clock Setup: 'on-board_oscillator'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 14.41 MHz ( period = 69.400 ns )
-From           : mem_intercept:inst27|display_2_out[1]
-To             : lpm_rom2:inst31|lpm_rom:lpm_rom_component|altrom:srom|q[0]~reg_ra1
+Actual Time    : 19.57 MHz ( period = 51.100 ns )
+From           : eightbit_register_file:inst9|altdpram:regfile[0][7]__2|xq[0]
+To             : alu:inst12|zero
 From Clock     : on-board_oscillator
 To Clock       : on-board_oscillator
 Failed Paths   : 0
-
-Type           : Clock Hold: 'on-board_oscillator'
-Slack          : Not operational: Clock Skew > Data Delay
-Required Time  : None
-Actual Time    : N/A
-From           : eightbit_register_file:inst9|altdpram:regfile[0][7]__2|xq[4]
-To             : mem_intercept:inst27|display_2_out[3]
-From Clock     : on-board_oscillator
-To Clock       : on-board_oscillator
-Failed Paths   : 10
 
 Type           : Total number of failed paths
 Slack          : 
@@ -70,7 +60,7 @@ From           :
 To             : 
 From Clock     : 
 To Clock       : 
-Failed Paths   : 10
+Failed Paths   : 0
 
 --------------------------------------------------------------------------------------
 
