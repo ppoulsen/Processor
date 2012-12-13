@@ -1,5 +1,5 @@
 Assembler report for Processor
-Wed Dec 12 20:45:51 2012
+Thu Dec 13 00:06:45 2012
 Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/Brian/Documents/GitHub/Processor/Processor.sof
-  6. Assembler Device Options: C:/Users/Brian/Documents/GitHub/Processor/Processor.pof
+  5. Assembler Device Options: C:/Users/Paul/Documents/GitHub/Processor/Processor.sof
+  6. Assembler Device Options: C:/Users/Paul/Documents/GitHub/Processor/Processor.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Dec 12 20:45:51 2012 ;
+; Assembler Status      ; Successful - Thu Dec 13 00:06:45 2012 ;
 ; Revision Name         ; Processor                             ;
 ; Top-level Entity Name ; processor                             ;
 ; Family                ; FLEX10K                               ;
@@ -74,37 +74,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------------------------------------+
-; Assembler Generated Files                               ;
-+---------------------------------------------------------+
-; File Name                                               ;
-+---------------------------------------------------------+
-; C:/Users/Brian/Documents/GitHub/Processor/Processor.sof ;
-; C:/Users/Brian/Documents/GitHub/Processor/Processor.pof ;
-+---------------------------------------------------------+
++--------------------------------------------------------+
+; Assembler Generated Files                              ;
++--------------------------------------------------------+
+; File Name                                              ;
++--------------------------------------------------------+
+; C:/Users/Paul/Documents/GitHub/Processor/Processor.sof ;
+; C:/Users/Paul/Documents/GitHub/Processor/Processor.pof ;
++--------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Brian/Documents/GitHub/Processor/Processor.sof ;
-+----------------+------------------------------------------------------------------+
-; Option         ; Setting                                                          ;
-+----------------+------------------------------------------------------------------+
-; Device         ; EPF10K70RC240-4                                                  ;
-; JTAG usercode  ; 0x0000007F                                                       ;
-; Checksum       ; 0x00074F5C                                                       ;
-+----------------+------------------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Paul/Documents/GitHub/Processor/Processor.sof ;
++----------------+-----------------------------------------------------------------+
+; Option         ; Setting                                                         ;
++----------------+-----------------------------------------------------------------+
+; Device         ; EPF10K70RC240-4                                                 ;
+; JTAG usercode  ; 0x0000007F                                                      ;
+; Checksum       ; 0x00073B11                                                      ;
++----------------+-----------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Brian/Documents/GitHub/Processor/Processor.pof ;
-+--------------------+--------------------------------------------------------------+
-; Option             ; Setting                                                      ;
-+--------------------+--------------------------------------------------------------+
-; Device             ; EPC2                                                         ;
-; JTAG usercode      ; 0x00000000                                                   ;
-; Checksum           ; 0x019201A8                                                   ;
-; Compression Ratio  ; 1                                                            ;
-+--------------------+--------------------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/Paul/Documents/GitHub/Processor/Processor.pof ;
++--------------------+-------------------------------------------------------------+
+; Option             ; Setting                                                     ;
++--------------------+-------------------------------------------------------------+
+; Device             ; EPC2                                                        ;
+; JTAG usercode      ; 0x00000000                                                  ;
+; Checksum           ; 0x0191F4DC                                                  ;
+; Compression Ratio  ; 1                                                           ;
++--------------------+-------------------------------------------------------------+
 
 
 +--------------------+
@@ -113,12 +113,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
-    Info: Processing started: Wed Dec 12 20:45:51 2012
+    Info: Processing started: Thu Dec 13 00:06:45 2012
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Processor -c Processor
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 195 megabytes
-    Info: Processing ended: Wed Dec 12 20:45:51 2012
+    Info: Processing ended: Thu Dec 13 00:06:45 2012
     Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:00
 

@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 21.100 ns
-From           : dip_in[2]
-To             : eightbit_register_file:inst9|altdpram:regfile[0][7]__2|cells[5][3]
+Actual Time    : 20.400 ns
+From           : dip_in[7]
+To             : eightbit_register_file:inst9|altdpram:regfile[0][7]__2|cells[7][0]
 From Clock     : --
 To Clock       : on-board_oscillator
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 44.400 ns
-From           : mem_intercept:inst27|read_switch[1]
-To             : mux_less_than[0]
+Actual Time    : 45.000 ns
+From           : controller:inst3|MemtoReg
+To             : mux_less_than[7]
 From Clock     : on-board_oscillator
 To Clock       : --
 Failed Paths   : 0
@@ -25,7 +25,7 @@ Failed Paths   : 0
 Type           : Worst-case tpd
 Slack          : N/A
 Required Time  : None
-Actual Time    : 40.500 ns
+Actual Time    : 43.000 ns
 From           : right_in
 To             : mux_less_than[0]
 From Clock     : --
@@ -35,7 +35,7 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : -3.900 ns
+Actual Time    : -4.200 ns
 From           : reset
 To             : Clock1Hz:inst21|clock5
 From Clock     : --
@@ -45,9 +45,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'on-board_oscillator'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 19.57 MHz ( period = 51.100 ns )
-From           : eightbit_register_file:inst9|altdpram:regfile[0][7]__2|xq[0]
-To             : alu:inst12|zero
+Actual Time    : 23.26 MHz ( period = 43.000 ns )
+From           : lpm_rom0:inst2|lpm_rom:lpm_rom_component|altrom:srom|q[5]
+To             : alu:inst12|output[6]
 From Clock     : on-board_oscillator
 To Clock       : on-board_oscillator
 Failed Paths   : 0

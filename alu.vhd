@@ -14,39 +14,36 @@ END alu;
 ARCHITECTURE dataflow OF alu IS
 BEGIN
 	PROCESS(clk_in) -- alter values on change
-	VARIABLE result : STD_LOGIC_VECTOR(7 DOWNTO 0); -- result
 	BEGIN
 		IF (RISING_EDGE(clk_in)) THEN
 			CASE opcode IS
 				WHEN "000" =>
-					result := x AND y;
+					output <= x AND y;
 				WHEN "001" =>
-					result := x OR y;
+					output <= x OR y;
 				WHEN "010" =>
-					result := x XOR y;
+					output <= x XOR y;
 				WHEN "011" =>
-					result := STD_LOGIC_VECTOR(UNSIGNED(x) SLL TO_INTEGER(UNSIGNED(y)));
+					output <= STD_LOGIC_VECTOR(UNSIGNED(x) SLL TO_INTEGER(UNSIGNED(y)));
 				WHEN "100" =>
-					result := STD_LOGIC_VECTOR(UNSIGNED(x) SRL TO_INTEGER(UNSIGNED(y)));
+					output <= STD_LOGIC_VECTOR(UNSIGNED(x) SRL TO_INTEGER(UNSIGNED(y)));
 				WHEN "101" =>
-					result := STD_LOGIC_VECTOR(UNSIGNED(x) + UNSIGNED(y));
+					output <= STD_LOGIC_VECTOR(UNSIGNED(x) + UNSIGNED(y));
 				WHEN "110" =>
-					result := STD_LOGIC_VECTOR(UNSIGNED(x) - UNSIGNED(y));
-					
+					output <= STD_LOGIC_VECTOR(UNSIGNED(x) - UNSIGNED(y));
+					IF (TO_INTEGER(UNSIGNED(x) - UNSIGNED(y)) = 0) THEN
+						zero <= '1';
+					ELSE
+						zero <= '0';
+					END IF;
+					IF (STD_LOGIC_VECTOR(UNSIGNED(x) - UNSIGNED(y))(7) = '0') THEN
+						less_than <= "00000000";
+					ELSE
+						less_than <= "00000001";
+					END IF;
 				WHEN OTHERS =>
-					result := "00000000";
+					output <= "00000000";
 			END CASE;
-			IF result = "00000000" THEN
-				zero <= '1';
-			ELSE
-				zero <= '0';
-			END IF;
-			IF result(7) = '0' THEN
-				less_than <= "00000000";
-			ELSE
-				less_than <= "00000001";
-			END IF;
-			output <= result;
 		END IF;
 	END PROCESS;
 END dataflow;

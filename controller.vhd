@@ -37,15 +37,15 @@ BEGIN
 				-- subi
 				when "0100" => Beq <= '0'; Bne <= '1'; RegDest <= '1'; MemRead <= '0'; MemToReg <= '0'; ALUOp <= "110"; RegWrite <= '1'; ALUSrc <= '0'; JumpDest <= '1'; MemWrite <= '0'; LessThan <= '0'; ALUArg <= '0';
 				-- J
-				when "0101" => Beq <= '0'; Bne <= '0'; RegDest <= '0'; MemRead <= '0'; MemToReg <= '0'; ALUOp <= "000"; RegWrite <= '0'; ALUSrc <= '0'; JumpDest <= '1'; LessThan <= '0'; MemWrite <= '0'; ALUArg <= '0';
+				when "0101" => Beq <= '1'; Bne <= '0'; RegDest <= '0'; MemRead <= '0'; MemToReg <= '0'; ALUOp <= "000"; RegWrite <= '0'; ALUSrc <= '0'; JumpDest <= '1'; LessThan <= '0'; MemWrite <= '0'; ALUArg <= '0';
 				-- Jr
-				when "0110" => Beq <= '0'; Bne <= '0'; RegDest <= '0'; MemRead <= '0'; MemToReg <= '0'; ALUOp <= "000"; RegWrite <= '0'; ALUSrc <= '0'; JumpDest <= '0'; LessThan <= '0'; MemWrite <= '0'; ALUArg <= '0';
+				when "0110" => Beq <= '1'; Bne <= '0'; RegDest <= '0'; MemRead <= '0'; MemToReg <= '0'; ALUOp <= "000"; RegWrite <= '0'; ALUSrc <= '0'; JumpDest <= '0'; LessThan <= '0'; MemWrite <= '0'; ALUArg <= '0';
 				-- beq
-				when "1000" => Beq <= '1'; Bne <= '1'; RegDest <= '0'; MemRead <= '0'; MemToReg <= '0'; ALUOp <= "110"; RegWrite <= '0'; ALUSrc <= '1'; JumpDest <= '1'; LessThan <= '0'; MemWrite <= '0'; ALUArg <= '0';
+				when "1000" => Beq <= '1'; Bne <= '1'; RegDest <= '0'; MemRead <= '0'; MemToReg <= '0'; ALUOp <= "110"; RegWrite <= '0'; ALUSrc <= '0'; JumpDest <= '1'; LessThan <= '0'; MemWrite <= '0'; ALUArg <= '1';
 				-- bne
-				when "1001" => Beq <= '0'; Bne <= '0'; RegDest <= '0'; MemRead <= '0'; MemToReg <= '0'; ALUOp <= "110"; RegWrite <= '0'; ALUSrc <= '1'; JumpDest <= '1'; LessThan <= '0'; MemWrite <= '0'; ALUArg <= '0';
+				when "1001" => Beq <= '0'; Bne <= '0'; RegDest <= '0'; MemRead <= '0'; MemToReg <= '0'; ALUOp <= "110"; RegWrite <= '0'; ALUSrc <= '0'; JumpDest <= '1'; LessThan <= '0'; MemWrite <= '0'; ALUArg <= '1';
 				-- slt
-				when "1010" => Beq <= '0'; Bne <= '1'; RegDest <= '1'; MemRead <= '0'; MemToReg <= '0'; ALUOp <= "110"; RegWrite <= '1'; ALUSrc <= '1'; JumpDest <= '1'; LessThan <= '1'; MemWrite <= '0'; ALUArg <= '1';
+				when "1010" => Beq <= '0'; Bne <= '1'; RegDest <= '1'; MemRead <= '0'; MemToReg <= '0'; ALUOp <= "110"; RegWrite <= '1'; ALUSrc <= '0'; JumpDest <= '1'; LessThan <= '1'; MemWrite <= '0'; ALUArg <= '1';
 				-- lw
 				when "1011" => Beq <= '0'; Bne <= '1'; RegDest <= '1'; MemRead <= '1'; MemToReg <= '1'; ALUOp <= "000"; RegWrite <= '1'; ALUSrc <= '0'; JumpDest <= '1'; LessThan <= '0'; MemWrite <= '0'; ALUArg <= '0';
 				-- sw

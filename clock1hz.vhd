@@ -7,20 +7,22 @@ ENTITY Clock1Hz IS
 		clock2:	OUT BIT;
 		clock3:	OUT BIT;
 		clock4:	OUT BIT;
-		clock5: OUT BIT
+		clock5: OUT BIT;
+		clock6: OUT BIT;
+		clock7: OUT BIT
         );
 END Clock1Hz;
 
 ARCHITECTURE a OF Clock1Hz IS
 BEGIN
 PROCESS (reset, clk)
-	VARIABLE big_count : INTEGER RANGE 0 TO 2000;
-    VARIABLE cnt : INTEGER RANGE 0 TO 5;
+	VARIABLE big_count : INTEGER RANGE 0 TO 100;
+    VARIABLE cnt : INTEGER RANGE 0 TO 7;
 BEGIN
     IF (reset = '1') THEN
         cnt := 0;
 	ELSIF (clk'EVENT AND clk = '1') THEN
-		IF(big_count = 2000) THEN
+		IF(big_count = 100) THEN
 			big_count := 0;
 			IF (cnt = 0) THEN
 				clock0 <= '1';
@@ -69,6 +71,26 @@ BEGIN
 				clock2 <= '0';
 				clock4 <= '0';
 				clock5 <= '1';
+				cnt := 6;
+			ELSIF (cnt = 6) THEN
+				clock3 <= '0';
+				clock0 <= '0';
+				clock1 <= '0';
+				clock2 <= '0';
+				clock4 <= '0';
+				clock5 <= '0';
+				clock6 <= '1';
+				clock7 <= '0';
+				cnt := 7;
+			ELSIF (cnt = 7) THEN
+				clock3 <= '0';
+				clock0 <= '0';
+				clock1 <= '0';
+				clock2 <= '0';
+				clock4 <= '0';
+				clock5 <= '0';
+				clock6 <= '0';
+				clock7 <= '1';
 				cnt := 0;
 			END IF;
 		ELSE
