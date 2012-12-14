@@ -4,6 +4,62 @@
 	<pin_info>
 		<pin name="led_1[7]" source="Pin Planner" >
 		</pin>
+		<pin name="inst" source="Pin Planner" >
+		</pin>
+		<pin name="inst4" source="Pin Planner" >
+		</pin>
+		<pin name="inst5" source="Pin Planner" >
+		</pin>
+		<pin name="inst6" source="Pin Planner" >
+		</pin>
+		<pin name="inst7" source="Pin Planner" >
+		</pin>
+		<pin name="inst10" source="Pin Planner" >
+		</pin>
+		<pin name="inst11" source="Pin Planner" >
+		</pin>
+		<pin name="inst14" source="Pin Planner" >
+		</pin>
+		<pin name="inst15" source="Pin Planner" >
+		</pin>
+		<pin name="inst1" source="Pin Planner" >
+		</pin>
+		<pin name="inst13" source="Pin Planner" >
+		</pin>
+		<pin name="inst16" source="Pin Planner" >
+		</pin>
+		<pin name="inst17" source="Pin Planner" >
+		</pin>
+		<pin name="inst9" source="Pin Planner" >
+		</pin>
+		<pin name="inst19" source="Pin Planner" >
+		</pin>
+		<pin name="inst20" source="Pin Planner" >
+		</pin>
+		<pin name="inst28" source="Pin Planner" >
+		</pin>
+		<pin name="inst29" source="Pin Planner" >
+		</pin>
+		<pin name="inst30" source="Pin Planner" >
+		</pin>
+		<pin name="inst31" source="Pin Planner" >
+		</pin>
+		<pin name="inst32" source="Pin Planner" >
+		</pin>
+		<pin name="inst33" source="Pin Planner" >
+		</pin>
+		<pin name="inst34" source="Pin Planner" >
+		</pin>
+		<pin name="inst12" source="Pin Planner" >
+		</pin>
+		<pin name="inst21" source="Pin Planner" >
+		</pin>
+		<pin name="inst3" source="Pin Planner" >
+		</pin>
+		<pin name="inst27" source="Pin Planner" >
+		</pin>
+		<pin name="inst2" source="Pin Planner" >
+		</pin>
 	</pin_info>
 	<buses>
 	</buses>

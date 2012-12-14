@@ -1142,6 +1142,186 @@ SIGNAL("alu_out[0]")
 	PARENT = "alu_out";
 }
 
+SIGNAL("read_intercept_mux_out")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("read_intercept_mux_out[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "read_intercept_mux_out";
+}
+
+SIGNAL("read_intercept_mux_out[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "read_intercept_mux_out";
+}
+
+SIGNAL("read_intercept_mux_out[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "read_intercept_mux_out";
+}
+
+SIGNAL("read_intercept_mux_out[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "read_intercept_mux_out";
+}
+
+SIGNAL("read_intercept_mux_out[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "read_intercept_mux_out";
+}
+
+SIGNAL("read_intercept_mux_out[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "read_intercept_mux_out";
+}
+
+SIGNAL("read_intercept_mux_out[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "read_intercept_mux_out";
+}
+
+SIGNAL("read_intercept_mux_out[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "read_intercept_mux_out";
+}
+
+SIGNAL("mem_alu_mux")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = BUS;
+	WIDTH = 8;
+	LSB_INDEX = 0;
+	DIRECTION = OUTPUT;
+	PARENT = "";
+}
+
+SIGNAL("mem_alu_mux[7]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mem_alu_mux";
+}
+
+SIGNAL("mem_alu_mux[6]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mem_alu_mux";
+}
+
+SIGNAL("mem_alu_mux[5]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mem_alu_mux";
+}
+
+SIGNAL("mem_alu_mux[4]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mem_alu_mux";
+}
+
+SIGNAL("mem_alu_mux[3]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mem_alu_mux";
+}
+
+SIGNAL("mem_alu_mux[2]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mem_alu_mux";
+}
+
+SIGNAL("mem_alu_mux[1]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mem_alu_mux";
+}
+
+SIGNAL("mem_alu_mux[0]")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = OUTPUT;
+	PARENT = "mem_alu_mux";
+}
+
 TRANSITION_LIST("on-board_oscillator")
 {
 	NODE
@@ -1694,7 +1874,9 @@ TRANSITION_LIST("right_in")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 3000000.0;
+		LEVEL 0 FOR 1187840.0;
+		LEVEL 1 FOR 860160.0;
+		LEVEL 0 FOR 952000.0;
 	}
 }
 
@@ -1703,7 +1885,9 @@ TRANSITION_LIST("left_in")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 3000000.0;
+		LEVEL 0 FOR 1187840.0;
+		LEVEL 1 FOR 860160.0;
+		LEVEL 0 FOR 952000.0;
 	}
 }
 
@@ -2032,6 +2216,150 @@ TRANSITION_LIST("alu_out[1]")
 }
 
 TRANSITION_LIST("alu_out[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("read_intercept_mux_out[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("read_intercept_mux_out[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("read_intercept_mux_out[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("read_intercept_mux_out[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("read_intercept_mux_out[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("read_intercept_mux_out[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("read_intercept_mux_out[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("read_intercept_mux_out[0]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("mem_alu_mux[7]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("mem_alu_mux[6]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("mem_alu_mux[5]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("mem_alu_mux[4]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("mem_alu_mux[3]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("mem_alu_mux[2]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("mem_alu_mux[1]")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000000.0;
+	}
+}
+
+TRANSITION_LIST("mem_alu_mux[0]")
 {
 	NODE
 	{
@@ -3141,6 +3469,186 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 110;
 	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "read_intercept_mux_out";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 111;
+	TREE_LEVEL = 0;
+	CHILDREN = 112, 113, 114, 115, 116, 117, 118, 119;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "read_intercept_mux_out[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 112;
+	TREE_LEVEL = 1;
+	PARENT = 111;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "read_intercept_mux_out[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 113;
+	TREE_LEVEL = 1;
+	PARENT = 111;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "read_intercept_mux_out[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 114;
+	TREE_LEVEL = 1;
+	PARENT = 111;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "read_intercept_mux_out[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 115;
+	TREE_LEVEL = 1;
+	PARENT = 111;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "read_intercept_mux_out[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 116;
+	TREE_LEVEL = 1;
+	PARENT = 111;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "read_intercept_mux_out[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 117;
+	TREE_LEVEL = 1;
+	PARENT = 111;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "read_intercept_mux_out[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 118;
+	TREE_LEVEL = 1;
+	PARENT = 111;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "read_intercept_mux_out[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 119;
+	TREE_LEVEL = 1;
+	PARENT = 111;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mem_alu_mux";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 120;
+	TREE_LEVEL = 0;
+	CHILDREN = 121, 122, 123, 124, 125, 126, 127, 128;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mem_alu_mux[7]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 121;
+	TREE_LEVEL = 1;
+	PARENT = 120;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mem_alu_mux[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 122;
+	TREE_LEVEL = 1;
+	PARENT = 120;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mem_alu_mux[5]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 123;
+	TREE_LEVEL = 1;
+	PARENT = 120;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mem_alu_mux[4]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 124;
+	TREE_LEVEL = 1;
+	PARENT = 120;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mem_alu_mux[3]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 125;
+	TREE_LEVEL = 1;
+	PARENT = 120;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mem_alu_mux[2]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 126;
+	TREE_LEVEL = 1;
+	PARENT = 120;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mem_alu_mux[1]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 127;
+	TREE_LEVEL = 1;
+	PARENT = 120;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "mem_alu_mux[0]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = ASCII;
+	TREE_INDEX = 128;
+	TREE_LEVEL = 1;
+	PARENT = 120;
 }
 
 TIME_BAR

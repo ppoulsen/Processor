@@ -16,13 +16,13 @@ END Clock1Hz;
 ARCHITECTURE a OF Clock1Hz IS
 BEGIN
 PROCESS (reset, clk)
-	VARIABLE big_count : INTEGER RANGE 0 TO 12000;
+	VARIABLE big_count : INTEGER RANGE 0 TO 100;
     VARIABLE cnt : INTEGER RANGE 0 TO 7;
 BEGIN
     IF (reset = '1') THEN
         cnt := 0;
 	ELSIF (clk'EVENT AND clk = '1') THEN
-		IF(big_count = 12000) THEN
+		IF(big_count = 100) THEN
 			big_count := 0;
 			IF (cnt = 0) THEN
 				clock0 <= '1';
