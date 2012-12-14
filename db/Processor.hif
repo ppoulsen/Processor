@@ -7605,6 +7605,39 @@ controller:inst3
 
 # end
 # entity
+sign_extender
+# storage
+db|Processor.(19).cnf
+db|Processor.(19).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+sign_extender.vhd
+ccd7ab38cbccce4322b61311551ba72a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+sign_extender:inst15
+}
+# lmf
+..|..|..|..|..|altera|90sp2|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
 Clock1Hz
 # storage
 db|Processor.(5).cnf
@@ -7790,8 +7823,6 @@ address0
 3
 }
 # include_file {
-..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|memmodes.inc
-44d4551a35f349f0dbacaf799d39950
 ..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|aglobal90.inc
 99832fdf63412df51d7531202d74e75
 ..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|lpm_decode.inc
@@ -7802,47 +7833,16 @@ bd0e2f5e01c1bd360461dceb53d48
 1b5760dd55919ddb45bfb2c0e896218b
 ..|..|..|..|..|altera|90sp2|quartus|libraries|megafunctions|lpm_mux.inc
 c22bfd353214c01495b560fc34e47d79
+..|..|..|..|..|altera|90sp2|quartus|libraries|others|maxplus2|memmodes.inc
+44d4551a35f349f0dbacaf799d39950
 }
 # memory_file {
 rom.MIF
-c23a94552d34d8869bfd4525ec43cd
+a355d517801ff9a9dc78c6632aae7f9
 }
 # hierarchies {
 lpm_rom0:inst2|lpm_rom:lpm_rom_component|altrom:srom
 }
-# macro_sequence
-
-# end
-# entity
-sign_extender
-# storage
-db|Processor.(19).cnf
-db|Processor.(19).cnf
-# logic_option {
-AUTO_RAM_RECOGNITION
-ON
-}
-# case_insensitive
-# source_file
-sign_extender.vhd
-ccd7ab38cbccce4322b61311551ba72a
-5
-# internal_option {
-HDL_INITIAL_FANOUT_LIMIT
-OFF
-AUTO_RESOURCE_SHARING
-OFF
-AUTO_RAM_RECOGNITION
-ON
-AUTO_ROM_RECOGNITION
-ON
-}
-# hierarchies {
-sign_extender:inst15
-}
-# lmf
-..|..|..|..|..|altera|90sp2|quartus|lmf|maxplus2.lmf
-9a59d39b0706640b4b2718e8a1ff1f
 # macro_sequence
 
 # end
