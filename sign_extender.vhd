@@ -11,8 +11,8 @@ ARCHITECTURE dataflow OF sign_extender IS
 BEGIN
 	PROCESS(immediate6) -- alter values on immediate6 change
 	BEGIN
-		immediate8(7) <= immediate6(5);
-		immediate8(6) <= immediate6(5);
+		immediate8(7) <= '0';
+		immediate8(6) <= '0';
 		immediate8(5 DOWNTO 0) <= immediate6(5 DOWNTO 0);
 	END PROCESS;
 END dataflow;
