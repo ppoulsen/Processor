@@ -2672,8 +2672,8 @@ VECTOR("C:/Users/Paul/Documents/GitHub/Processor/Processor.vwf")
 VECTOR("C:/Users/Paul/Documents/GitHub/Processor/db/Processor.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 283718778;
-		ZEND = 383718778;
+		ZBEGIN = 0;
+		ZEND = 100000000;
 		NUMERATOR = 1081;
 		DENOMINATOR = 100000000;
 		TOP_INDEX = 0;

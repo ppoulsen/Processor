@@ -24,17 +24,17 @@ BEGIN
 	BEGIN
 		IF (RISING_EDGE(clk_in)) THEN
 			IF (sw = '0' AND lw = '1') THEN
-				CASE TO_INTEGER(UNSIGNED(address_in)) IS
-					when 0 => read_switch <= "00";
-					when 1 => read_switch <= "01";
-					when 2 => read_switch <= "10";
+				CASE address_in IS
+					when "00000000" => read_switch <= "00";
+					when "00000001" => read_switch <= "01";
+					when "00000010" => read_switch <= "10";
 					when others => read_switch <= "11";
 				END CASE;
 			ELSIF (sw = '1' AND lw = '0') THEN
-				CASE TO_INTEGER(UNSIGNED(address_in)) IS
-					when 0 => display_1_out <= data_in(7 DOWNTO 4); display_2_out <= data_in(3 DOWNTO 0);
-					when 1 => decimal_1 <= data_in(0);
-					when 2 => decimal_2 <= data_in(0);
+				CASE address_in IS
+					when "00000000" => display_1_out <= data_in(7 DOWNTO 4); display_2_out <= data_in(3 DOWNTO 0);
+					when "00000001" => decimal_1 <= data_in(0);
+					when "00000010" => decimal_2 <= data_in(0);
 					when others => null;
 				END CASE;
 			END IF;
